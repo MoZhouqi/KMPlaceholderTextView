@@ -24,6 +24,27 @@ let placeholderTextView = KMPlaceholderTextView(frame: view.bounds)
 placeholderTextView.placeholder = "What's on your mind?"
 view.addSubview(placeholderTextView)
 ```
+## Installation
+
+### CocoaPods
+
+You can install the latest pre-release version of CocoaPods with the following command:
+
+```bash
+$ gem install cocoapods --pre
+```
+
+Simply add the following line to your Podfile:
+
+```ruby
+pod 'KMPlaceholderTextView', '~> 0.1.0' 
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
 
 ## Requirements
 
