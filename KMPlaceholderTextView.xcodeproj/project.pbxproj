@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD2064F61AA18E6900E1F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2064F51AA18E6900E1F272 /* AppDelegate.swift */; };
+		CD2064F81AA18E6900E1F272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2064F71AA18E6900E1F272 /* ViewController.swift */; };
+		CD2064FB1AA18E6900E1F272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2064F91AA18E6900E1F272 /* Main.storyboard */; };
+		CD2064FD1AA18E6900E1F272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2064FC1AA18E6900E1F272 /* Images.xcassets */; };
+		CD2065001AA18E6900E1F272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2064FE1AA18E6900E1F272 /* LaunchScreen.xib */; };
+		CD20650C1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */; };
+		CD2065171AA18F0100E1F272 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD2065061AA18E6900E1F272 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2064E81AA18E6900E1F272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2064EF1AA18E6900E1F272;
+			remoteInfo = KMPlaceholderTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD2064F01AA18E6900E1F272 /* KMPlaceholderTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMPlaceholderTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2064F41AA18E6900E1F272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2064F51AA18E6900E1F272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD2064F71AA18E6900E1F272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD2064FA1AA18E6900E1F272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD2064FC1AA18E6900E1F272 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD2064FF1AA18E6900E1F272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD2065051AA18E6900E1F272 /* KMPlaceholderTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMPlaceholderTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD20650A1AA18E6900E1F272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextViewTests.swift; sourceTree = "<group>"; };
+		CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD2064ED1AA18E6900E1F272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2065021AA18E6900E1F272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD2064E71AA18E6900E1F272 = {
+			isa = PBXGroup;
+			children = (
+				CD2064F21AA18E6900E1F272 /* Example */,
+				CD2065151AA18F0100E1F272 /* KMPlaceholderTextView */,
+				CD2065081AA18E6900E1F272 /* KMPlaceholderTextViewTests */,
+				CD2064F11AA18E6900E1F272 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD2064F11AA18E6900E1F272 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2064F01AA18E6900E1F272 /* KMPlaceholderTextView.app */,
+				CD2065051AA18E6900E1F272 /* KMPlaceholderTextViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2064F21AA18E6900E1F272 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				CD2064F51AA18E6900E1F272 /* AppDelegate.swift */,
+				CD2064F71AA18E6900E1F272 /* ViewController.swift */,
+				CD2064F91AA18E6900E1F272 /* Main.storyboard */,
+				CD2064FC1AA18E6900E1F272 /* Images.xcassets */,
+				CD2064FE1AA18E6900E1F272 /* LaunchScreen.xib */,
+				CD2064F31AA18E6900E1F272 /* Supporting Files */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		CD2064F31AA18E6900E1F272 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD2064F41AA18E6900E1F272 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD2065081AA18E6900E1F272 /* KMPlaceholderTextViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */,
+				CD2065091AA18E6900E1F272 /* Supporting Files */,
+			);
+			path = KMPlaceholderTextViewTests;
+			sourceTree = "<group>";
+		};
+		CD2065091AA18E6900E1F272 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD20650A1AA18E6900E1F272 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD2065151AA18F0100E1F272 /* KMPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */,
+			);
+			path = KMPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD20650F1AA18E6900E1F272 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */;
+			buildPhases = (
+				CD2064EC1AA18E6900E1F272 /* Sources */,
+				CD2064ED1AA18E6900E1F272 /* Frameworks */,
+				CD2064EE1AA18E6900E1F272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMPlaceholderTextView;
+			productName = KMPlaceholderTextView;
+			productReference = CD2064F01AA18E6900E1F272 /* KMPlaceholderTextView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD2065041AA18E6900E1F272 /* KMPlaceholderTextViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2065121AA18E6900E1F272 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewTests" */;
+			buildPhases = (
+				CD2065011AA18E6900E1F272 /* Sources */,
+				CD2065021AA18E6900E1F272 /* Frameworks */,
+				CD2065031AA18E6900E1F272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2065071AA18E6900E1F272 /* PBXTargetDependency */,
+			);
+			name = KMPlaceholderTextViewTests;
+			productName = KMPlaceholderTextViewTests;
+			productReference = CD2065051AA18E6900E1F272 /* KMPlaceholderTextViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD2064E81AA18E6900E1F272 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Zhouqi Mo";
+				TargetAttributes = {
+					CD2064EF1AA18E6900E1F272 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CD2065041AA18E6900E1F272 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CD2064EF1AA18E6900E1F272;
+					};
+				};
+			};
+			buildConfigurationList = CD2064EB1AA18E6900E1F272 /* Build configuration list for PBXProject "KMPlaceholderTextView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD2064E71AA18E6900E1F272;
+			productRefGroup = CD2064F11AA18E6900E1F272 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */,
+				CD2065041AA18E6900E1F272 /* KMPlaceholderTextViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD2064EE1AA18E6900E1F272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2064FB1AA18E6900E1F272 /* Main.storyboard in Resources */,
+				CD2065001AA18E6900E1F272 /* LaunchScreen.xib in Resources */,
+				CD2064FD1AA18E6900E1F272 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2065031AA18E6900E1F272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2064EC1AA18E6900E1F272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2064F81AA18E6900E1F272 /* ViewController.swift in Sources */,
+				CD2065171AA18F0100E1F272 /* KMPlaceholderTextView.swift in Sources */,
+				CD2064F61AA18E6900E1F272 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2065011AA18E6900E1F272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD20650C1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD2065071AA18E6900E1F272 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */;
+			targetProxy = CD2065061AA18E6900E1F272 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD2064F91AA18E6900E1F272 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2064FA1AA18E6900E1F272 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD2064FE1AA18E6900E1F272 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2064FF1AA18E6900E1F272 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD20650D1AA18E6900E1F272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD20650E1AA18E6900E1F272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD2065101AA18E6900E1F272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD2065111AA18E6900E1F272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD2065131AA18E6900E1F272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KMPlaceholderTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMPlaceholderTextView.app/KMPlaceholderTextView";
+			};
+			name = Debug;
+		};
+		CD2065141AA18E6900E1F272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KMPlaceholderTextViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMPlaceholderTextView.app/KMPlaceholderTextView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD2064EB1AA18E6900E1F272 /* Build configuration list for PBXProject "KMPlaceholderTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD20650D1AA18E6900E1F272 /* Debug */,
+				CD20650E1AA18E6900E1F272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD20650F1AA18E6900E1F272 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2065101AA18E6900E1F272 /* Debug */,
+				CD2065111AA18E6900E1F272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD2065121AA18E6900E1F272 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2065131AA18E6900E1F272 /* Debug */,
+				CD2065141AA18E6900E1F272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD2064E81AA18E6900E1F272 /* Project object */;
+}
