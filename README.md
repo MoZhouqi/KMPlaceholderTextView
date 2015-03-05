@@ -37,7 +37,7 @@ $ gem install cocoapods --pre
 Simply add the following line to your Podfile:
 
 ```ruby
-pod 'KMPlaceholderTextView', '~> 0.1.0' 
+pod 'KMPlaceholderTextView', '~> 0.1.1' 
 ```
 
 Then, run the following command:

@@ -27,7 +27,7 @@ import UIKit
 public class KMPlaceholderTextView: UITextView {
     
     struct Constants {
-            static let defaultiOSPlaceholderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
+        static let defaultiOSPlaceholderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
     }
     
     @IBInspectable public var placeholder: String = "" {
@@ -68,6 +68,14 @@ public class KMPlaceholderTextView: UITextView {
         }
     }
     
+    override public var textContainerInset: UIEdgeInsets {
+        didSet {
+            updateConstraintsForPlaceholderLabel()
+        }
+    }
+    
+    var placeholderLabelConstraints = [AnyObject]()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -97,15 +105,22 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         addSubview(placeholderLabel)
         
-        var constraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(\(textContainerInset.left + textContainer.lineFragmentPadding))-[placeholder]-(\(textContainerInset.right + textContainer.lineFragmentPadding))-|",
+        updateConstraintsForPlaceholderLabel()
+        
+    }
+    
+    func updateConstraintsForPlaceholderLabel() {
+        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(\(textContainerInset.left + textContainer.lineFragmentPadding))-[placeholder]-(\(textContainerInset.right + textContainer.lineFragmentPadding))-|",
             options: nil,
             metrics: nil,
             views: ["placeholder": placeholderLabel])
-        constraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]-(>=\(textContainerInset.bottom))-|",
+        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]-(>=\(textContainerInset.bottom))-|",
             options: nil,
             metrics: nil,
             views: ["placeholder": placeholderLabel])
-        addConstraints(constraints)
+        removeConstraints(placeholderLabelConstraints)
+        addConstraints(newConstraints)
+        placeholderLabelConstraints = newConstraints
     }
     
     func textDidChange() {
