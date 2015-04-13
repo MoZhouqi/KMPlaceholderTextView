@@ -53,8 +53,8 @@ $ pod install
 
 ## Requirements
 
-- iOS 7.0 or later 
-- Xcode 6.1.1
+- iOS 7.0+
+- Xcode 6.3
 
 ## License
 
