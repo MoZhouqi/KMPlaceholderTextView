@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KMPlaceholderTextViewFramework
 
 class ViewController: UIViewController {
     
