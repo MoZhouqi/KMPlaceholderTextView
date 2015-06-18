@@ -74,7 +74,7 @@ public class KMPlaceholderTextView: UITextView {
         }
     }
     
-    var placeholderLabelConstraints = [AnyObject]()
+    var placeholderLabelConstraints = [NSLayoutConstraint]()
     
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
@@ -98,7 +98,7 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabel.text = placeholder
         placeholderLabel.numberOfLines = 0
         placeholderLabel.backgroundColor = UIColor.clearColor()
-        placeholderLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(placeholderLabel)
         
         updateConstraintsForPlaceholderLabel()
@@ -106,14 +106,15 @@ public class KMPlaceholderTextView: UITextView {
     }
     
     func updateConstraintsForPlaceholderLabel() {
+        let viewsDictionary = ["placeholder": placeholderLabel]
         var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(\(textContainerInset.left + textContainer.lineFragmentPadding))-[placeholder]-(\(textContainerInset.right + textContainer.lineFragmentPadding))-|",
-            options: nil,
+            options: NSLayoutFormatOptions.DirectionLeadingToTrailing,
             metrics: nil,
-            views: ["placeholder": placeholderLabel])
-        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]-(>=\(textContainerInset.bottom))-|",
-            options: nil,
+            views: viewsDictionary)
+        newConstraints.extend(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]-(>=\(textContainerInset.bottom))-|",
+            options: NSLayoutFormatOptions.DirectionLeadingToTrailing,
             metrics: nil,
-            views: ["placeholder": placeholderLabel])
+            views: viewsDictionary))
         removeConstraints(placeholderLabelConstraints)
         addConstraints(newConstraints)
         placeholderLabelConstraints = newConstraints
