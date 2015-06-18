@@ -7,16 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F1FA261B037C9F003268E6 /* KMPlaceholderTextViewFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F1FA251B037C9F003268E6 /* KMPlaceholderTextViewFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46F1FA2C1B037CA0003268E6 /* KMPlaceholderTextViewFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F1FA211B037C9F003268E6 /* KMPlaceholderTextViewFramework.framework */; };
+		46F1FA351B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1FA341B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.swift */; };
+		46F1FA381B037CA0003268E6 /* KMPlaceholderTextViewFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F1FA211B037C9F003268E6 /* KMPlaceholderTextViewFramework.framework */; };
+		46F1FA391B037CA0003268E6 /* KMPlaceholderTextViewFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F1FA211B037C9F003268E6 /* KMPlaceholderTextViewFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46F1FA431B037CF6003268E6 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1FA421B037CF6003268E6 /* KMPlaceholderTextView.swift */; };
 		CD2064F61AA18E6900E1F272 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2064F51AA18E6900E1F272 /* AppDelegate.swift */; };
 		CD2064F81AA18E6900E1F272 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2064F71AA18E6900E1F272 /* ViewController.swift */; };
 		CD2064FB1AA18E6900E1F272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2064F91AA18E6900E1F272 /* Main.storyboard */; };
 		CD2064FD1AA18E6900E1F272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2064FC1AA18E6900E1F272 /* Images.xcassets */; };
 		CD2065001AA18E6900E1F272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2064FE1AA18E6900E1F272 /* LaunchScreen.xib */; };
 		CD20650C1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */; };
-		CD2065171AA18F0100E1F272 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		46F1FA2D1B037CA0003268E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2064E81AA18E6900E1F272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46F1FA201B037C9F003268E6;
+			remoteInfo = KMPlaceholderTextViewFramework;
+		};
+		46F1FA2F1B037CA0003268E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2064E81AA18E6900E1F272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2064EF1AA18E6900E1F272;
+			remoteInfo = KMPlaceholderTextView;
+		};
+		46F1FA361B037CA0003268E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2064E81AA18E6900E1F272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46F1FA201B037C9F003268E6;
+			remoteInfo = KMPlaceholderTextViewFramework;
+		};
 		CD2065061AA18E6900E1F272 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD2064E81AA18E6900E1F272 /* Project object */;
@@ -26,7 +52,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46F1FA3F1B037CA0003268E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46F1FA391B037CA0003268E6 /* KMPlaceholderTextViewFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		46F1FA211B037C9F003268E6 /* KMPlaceholderTextViewFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KMPlaceholderTextViewFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F1FA241B037C9F003268E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F1FA251B037C9F003268E6 /* KMPlaceholderTextViewFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMPlaceholderTextViewFramework.h; sourceTree = "<group>"; };
+		46F1FA2B1B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMPlaceholderTextViewFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F1FA331B037CA0003268E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F1FA341B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextViewFrameworkTests.swift; sourceTree = "<group>"; };
+		46F1FA421B037CF6003268E6 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KMPlaceholderTextView.swift; path = ../KMPlaceholderTextViewFramework/KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		CD2064F01AA18E6900E1F272 /* KMPlaceholderTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMPlaceholderTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2064F41AA18E6900E1F272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2064F51AA18E6900E1F272 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,14 +84,29 @@
 		CD2065051AA18E6900E1F272 /* KMPlaceholderTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMPlaceholderTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD20650A1AA18E6900E1F272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextViewTests.swift; sourceTree = "<group>"; };
-		CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46F1FA1D1B037C9F003268E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F1FA281B037CA0003268E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F1FA2C1B037CA0003268E6 /* KMPlaceholderTextViewFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD2064ED1AA18E6900E1F272 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F1FA381B037CA0003268E6 /* KMPlaceholderTextViewFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +120,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46F1FA221B037C9F003268E6 /* KMPlaceholderTextViewFramework */ = {
+			isa = PBXGroup;
+			children = (
+				46F1FA251B037C9F003268E6 /* KMPlaceholderTextViewFramework.h */,
+				46F1FA411B037CF6003268E6 /* KMPlaceholderTextView */,
+				46F1FA231B037C9F003268E6 /* Supporting Files */,
+			);
+			path = KMPlaceholderTextViewFramework;
+			sourceTree = "<group>";
+		};
+		46F1FA231B037C9F003268E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46F1FA241B037C9F003268E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46F1FA311B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				46F1FA341B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.swift */,
+				46F1FA321B037CA0003268E6 /* Supporting Files */,
+			);
+			path = KMPlaceholderTextViewFrameworkTests;
+			sourceTree = "<group>";
+		};
+		46F1FA321B037CA0003268E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46F1FA331B037CA0003268E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46F1FA411B037CF6003268E6 /* KMPlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				46F1FA421B037CF6003268E6 /* KMPlaceholderTextView.swift */,
+			);
+			path = KMPlaceholderTextView;
+			sourceTree = SOURCE_ROOT;
+		};
 		CD2064E71AA18E6900E1F272 = {
 			isa = PBXGroup;
 			children = (
 				CD2064F21AA18E6900E1F272 /* Example */,
-				CD2065151AA18F0100E1F272 /* KMPlaceholderTextView */,
 				CD2065081AA18E6900E1F272 /* KMPlaceholderTextViewTests */,
+				46F1FA221B037C9F003268E6 /* KMPlaceholderTextViewFramework */,
+				46F1FA311B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests */,
 				CD2064F11AA18E6900E1F272 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +179,8 @@
 			children = (
 				CD2064F01AA18E6900E1F272 /* KMPlaceholderTextView.app */,
 				CD2065051AA18E6900E1F272 /* KMPlaceholderTextViewTests.xctest */,
+				46F1FA211B037C9F003268E6 /* KMPlaceholderTextViewFramework.framework */,
+				46F1FA2B1B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,17 +223,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD2065151AA18F0100E1F272 /* KMPlaceholderTextView */ = {
-			isa = PBXGroup;
-			children = (
-				CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */,
-			);
-			path = KMPlaceholderTextView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		46F1FA1E1B037C9F003268E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F1FA261B037C9F003268E6 /* KMPlaceholderTextViewFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		46F1FA201B037C9F003268E6 /* KMPlaceholderTextViewFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F1FA3E1B037CA0003268E6 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewFramework" */;
+			buildPhases = (
+				46F1FA1C1B037C9F003268E6 /* Sources */,
+				46F1FA1D1B037C9F003268E6 /* Frameworks */,
+				46F1FA1E1B037C9F003268E6 /* Headers */,
+				46F1FA1F1B037C9F003268E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMPlaceholderTextViewFramework;
+			productName = KMPlaceholderTextViewFramework;
+			productReference = 46F1FA211B037C9F003268E6 /* KMPlaceholderTextViewFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46F1FA2A1B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F1FA401B037CA0003268E6 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewFrameworkTests" */;
+			buildPhases = (
+				46F1FA271B037CA0003268E6 /* Sources */,
+				46F1FA281B037CA0003268E6 /* Frameworks */,
+				46F1FA291B037CA0003268E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46F1FA2E1B037CA0003268E6 /* PBXTargetDependency */,
+				46F1FA301B037CA0003268E6 /* PBXTargetDependency */,
+			);
+			name = KMPlaceholderTextViewFrameworkTests;
+			productName = KMPlaceholderTextViewFrameworkTests;
+			productReference = 46F1FA2B1B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD20650F1AA18E6900E1F272 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */;
@@ -133,10 +281,12 @@
 				CD2064EC1AA18E6900E1F272 /* Sources */,
 				CD2064ED1AA18E6900E1F272 /* Frameworks */,
 				CD2064EE1AA18E6900E1F272 /* Resources */,
+				46F1FA3F1B037CA0003268E6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46F1FA371B037CA0003268E6 /* PBXTargetDependency */,
 			);
 			name = KMPlaceholderTextView;
 			productName = KMPlaceholderTextView;
@@ -167,9 +317,17 @@
 		CD2064E81AA18E6900E1F272 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Zhouqi Mo";
 				TargetAttributes = {
+					46F1FA201B037C9F003268E6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					46F1FA2A1B037CA0003268E6 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CD2064EF1AA18E6900E1F272;
+					};
 					CD2064EF1AA18E6900E1F272 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -194,11 +352,27 @@
 			targets = (
 				CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */,
 				CD2065041AA18E6900E1F272 /* KMPlaceholderTextViewTests */,
+				46F1FA201B037C9F003268E6 /* KMPlaceholderTextViewFramework */,
+				46F1FA2A1B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		46F1FA1F1B037C9F003268E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F1FA291B037CA0003268E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD2064EE1AA18E6900E1F272 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,12 +393,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46F1FA1C1B037C9F003268E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F1FA431B037CF6003268E6 /* KMPlaceholderTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F1FA271B037CA0003268E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F1FA351B037CA0003268E6 /* KMPlaceholderTextViewFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD2064EC1AA18E6900E1F272 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD2064F81AA18E6900E1F272 /* ViewController.swift in Sources */,
-				CD2065171AA18F0100E1F272 /* KMPlaceholderTextView.swift in Sources */,
 				CD2064F61AA18E6900E1F272 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +429,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		46F1FA2E1B037CA0003268E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46F1FA201B037C9F003268E6 /* KMPlaceholderTextViewFramework */;
+			targetProxy = 46F1FA2D1B037CA0003268E6 /* PBXContainerItemProxy */;
+		};
+		46F1FA301B037CA0003268E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */;
+			targetProxy = 46F1FA2F1B037CA0003268E6 /* PBXContainerItemProxy */;
+		};
+		46F1FA371B037CA0003268E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46F1FA201B037C9F003268E6 /* KMPlaceholderTextViewFramework */;
+			targetProxy = 46F1FA361B037CA0003268E6 /* PBXContainerItemProxy */;
+		};
 		CD2065071AA18E6900E1F272 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CD2064EF1AA18E6900E1F272 /* KMPlaceholderTextView */;
@@ -267,6 +471,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		46F1FA3A1B037CA0003268E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KMPlaceholderTextViewFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46F1FA3B1B037CA0003268E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = KMPlaceholderTextViewFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46F1FA3C1B037CA0003268E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KMPlaceholderTextViewFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMPlaceholderTextView.app/KMPlaceholderTextView";
+			};
+			name = Debug;
+		};
+		46F1FA3D1B037CA0003268E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = KMPlaceholderTextViewFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMPlaceholderTextView.app/KMPlaceholderTextView";
+			};
+			name = Release;
+		};
 		CD20650D1AA18E6900E1F272 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,6 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -361,6 +654,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -403,6 +697,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46F1FA3E1B037CA0003268E6 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F1FA3A1B037CA0003268E6 /* Debug */,
+				46F1FA3B1B037CA0003268E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F1FA401B037CA0003268E6 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F1FA3C1B037CA0003268E6 /* Debug */,
+				46F1FA3D1B037CA0003268E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CD2064EB1AA18E6900E1F272 /* Build configuration list for PBXProject "KMPlaceholderTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -419,6 +731,7 @@
 				CD2065111AA18E6900E1F272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD2065121AA18E6900E1F272 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextViewTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +740,7 @@
 				CD2065141AA18E6900E1F272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
