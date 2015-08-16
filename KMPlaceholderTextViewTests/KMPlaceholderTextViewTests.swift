@@ -2,7 +2,7 @@
 //  KMPlaceholderTextViewTests.swift
 //  KMPlaceholderTextViewTests
 //
-//  Created by Zhouqi Mo on 3/4/15.
+//  Created by Zhouqi Mo on 8/16/15.
 //  Copyright (c) 2015 Zhouqi Mo. All rights reserved.
 //
 
