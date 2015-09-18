@@ -42,7 +42,7 @@ Simply add the following line to your Podfile:
 platform :ios, '8.0' 
 use_frameworks!
 
-pod 'KMPlaceholderTextView', '~> 0.1.2' 
+pod 'KMPlaceholderTextView', '~> 1.0.0' 
 ```
 
 Then, run the following command:
@@ -71,7 +71,7 @@ github "MoZhouqi/KMPlaceholderTextView" >= 1.0
 ## Requirements
 
 - iOS 7.0+
-- Xcode 6.3
+- Xcode 7
 
 ## License
 

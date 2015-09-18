@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     func keyboardWasShown(notification: NSNotification)
     {
         let info = notification.userInfo
-        var kbRect = info![UIKeyboardFrameEndUserInfoKey]!.CGRectValue()
+        var kbRect = info![UIKeyboardFrameEndUserInfoKey]!.CGRectValue
         kbRect = view.convertRect(kbRect, fromView: nil)
         
         var contentInsets = placeholderTextView.contentInset
