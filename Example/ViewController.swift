@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -48,11 +46,6 @@ class ViewController: UIViewController {
         contentInsets.bottom = 0.0
         placeholderTextView.contentInset = contentInsets
         placeholderTextView.scrollIndicatorInsets = contentInsets
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }
