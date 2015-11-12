@@ -28,9 +28,12 @@ private var myContext = 0
 @IBDesignable
 public class KMPlaceholderTextView: UITextView {
     
-    struct Constants {
+    private struct Constants {
         static let defaultiOSPlaceholderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
     }
+    private let placeholderLabel: UILabel = UILabel()
+    
+    private var placeholderLabelConstraints = [NSLayoutConstraint]()
     
     @IBInspectable public var placeholder: String = "" {
         didSet {
@@ -43,8 +46,6 @@ public class KMPlaceholderTextView: UITextView {
             placeholderLabel.textColor = placeholderColor
         }
     }
-    
-    public let placeholderLabel: UILabel = UILabel()
     
     override public var font: UIFont! {
         didSet {
@@ -76,9 +77,7 @@ public class KMPlaceholderTextView: UITextView {
         }
     }
     
-    var placeholderLabelConstraints = [NSLayoutConstraint]()
-    
-    override init(frame: CGRect, textContainer: NSTextContainer?) {
+    override public init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         commonInit()
     }
@@ -88,7 +87,7 @@ public class KMPlaceholderTextView: UITextView {
         commonInit()
     }
     
-    func commonInit() {
+    private func commonInit() {
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "textDidChange",
             name: UITextViewTextDidChangeNotification,
@@ -110,7 +109,7 @@ public class KMPlaceholderTextView: UITextView {
             context: &myContext)
     }
     
-    func updateConstraintsForPlaceholderLabel() {
+    private func updateConstraintsForPlaceholderLabel() {
         var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-left-[placeholder(width)]-right-|",
             options: [],
             metrics: [
@@ -128,12 +127,8 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabelConstraints = newConstraints
     }
     
-    func textDidChange() {
+    private func textDidChange() {
         placeholderLabel.hidden = !text.isEmpty
-    }
-    
-    override public func layoutSubviews() {
-        super.layoutSubviews()
     }
     
     override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
