@@ -127,7 +127,7 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabelConstraints = newConstraints
     }
     
-    private func textDidChange() {
+    @objc private func textDidChange() {
         placeholderLabel.hidden = !text.isEmpty
     }
     
