@@ -102,26 +102,29 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(placeholderLabel)
         updateConstraintsForPlaceholderLabel()
-        
-        addObserver(self,
-            forKeyPath: "textContainer.size",
-            options: [.Old, .New],
-            context: &myContext)
     }
     
     private func updateConstraintsForPlaceholderLabel() {
-        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-left-[placeholder(width)]-right-|",
+        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-left-[placeholder]-right-|",
             options: [],
             metrics: [
                 "left" : textContainerInset.left + textContainer.lineFragmentPadding,
-                "right" : textContainerInset.right + textContainer.lineFragmentPadding,
-                "width": textContainer.size.width - textContainer.lineFragmentPadding * 2.0
+                "right" : textContainerInset.right + textContainer.lineFragmentPadding
             ],
             views: ["placeholder": placeholderLabel])
         newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]-(>=\(textContainerInset.bottom))-|",
             options: [],
             metrics: nil,
             views: ["placeholder": placeholderLabel])
+        newConstraints.append(NSLayoutConstraint(
+            item: placeholderLabel,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: .Width,
+            multiplier: 1.0,
+            constant: -(textContainerInset.left + textContainerInset.right + textContainer.lineFragmentPadding * 2.0)
+            ))
         removeConstraints(placeholderLabelConstraints)
         addConstraints(newConstraints)
         placeholderLabelConstraints = newConstraints
@@ -131,30 +134,15 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabel.hidden = !text.isEmpty
     }
     
-    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        guard context == &myContext else {
-            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
-            return
-        }
-        guard let oldWidth = change?[NSKeyValueChangeOldKey]?.CGSizeValue().width else {
-            return
-        }
-        guard let newWidth = change?[NSKeyValueChangeNewKey]?.CGSizeValue().width else {
-            return
-        }
-        if oldWidth != newWidth {
-            updateConstraintsForPlaceholderLabel()
-            placeholderLabel.preferredMaxLayoutWidth = textContainer.size.width - textContainer.lineFragmentPadding * 2.0
-        }
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        placeholderLabel.preferredMaxLayoutWidth = textContainer.size.width - textContainer.lineFragmentPadding * 2.0
     }
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self,
             name: UITextViewTextDidChangeNotification,
             object: nil)
-        removeObserver(self,
-            forKeyPath: "textContainer.size",
-            context: &myContext)
     }
     
 }
