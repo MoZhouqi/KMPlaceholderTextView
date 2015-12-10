@@ -23,8 +23,6 @@
 
 import UIKit
 
-private var myContext = 0
-
 @IBDesignable
 public class KMPlaceholderTextView: UITextView {
     
