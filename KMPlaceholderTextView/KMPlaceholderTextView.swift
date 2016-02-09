@@ -109,19 +109,12 @@ public class KMPlaceholderTextView: UITextView {
                 "left" : textContainerInset.left + textContainer.lineFragmentPadding,
             ],
             views: ["placeholder": placeholderLabel])
-        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]",
+        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-top-[placeholder]",
             options: [],
-            metrics: nil,
+            metrics: [
+                "top" : textContainerInset.top,
+            ],
             views: ["placeholder": placeholderLabel])
-        newConstraints.append(NSLayoutConstraint(
-            item: placeholderLabel,
-            attribute: .Width,
-            relatedBy: .Equal,
-            toItem: self,
-            attribute: .Width,
-            multiplier: 1.0,
-            constant: -(textContainerInset.left + textContainerInset.right + textContainer.lineFragmentPadding * 2.0)
-            ))
         removeConstraints(placeholderLabelConstraints)
         addConstraints(newConstraints)
         placeholderLabelConstraints = newConstraints
