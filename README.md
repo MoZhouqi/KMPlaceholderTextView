@@ -71,7 +71,7 @@ github "MoZhouqi/KMPlaceholderTextView" >= 1.1
 ## Requirements
 
 - iOS 7.0+
-- Xcode 7+
+- Xcode 7.3+
 
 ## License
 
