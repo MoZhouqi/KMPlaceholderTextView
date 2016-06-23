@@ -47,6 +47,15 @@ public class KMPlaceholderTextView: UITextView {
     
     override public var font: UIFont! {
         didSet {
+            if placeholderFont == nil {
+                placeholderLabel.font = font
+            }
+        }
+    }
+    
+    public var placeholderFont: UIFont? {
+        didSet {
+            let font = (placeholderFont != nil) ? placeholderFont : self.font
             placeholderLabel.font = font
         }
     }
