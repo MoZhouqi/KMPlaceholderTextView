@@ -42,7 +42,7 @@ Simply add the following line to your Podfile:
 platform :ios, '8.0' 
 use_frameworks!
 
-pod 'KMPlaceholderTextView', '~> 1.2.1' 
+pod 'KMPlaceholderTextView', '~> 1.2.2' 
 ```
 
 Then, run the following command:
