@@ -84,6 +84,14 @@ public class KMPlaceholderTextView: UITextView {
         }
     }
     
+    private var placeholderLeftMargin: CGFloat {
+        return calculatePlaceHolderMargin(textContainerInset.left)
+    }
+    
+    private var placeholderRightMargin: CGFloat {
+        return calculatePlaceHolderMargin(textContainerInset.right)
+    }
+    
     override public init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         commonInit()
@@ -112,11 +120,11 @@ public class KMPlaceholderTextView: UITextView {
     }
     
     private func updateConstraintsForPlaceholderLabel() {
-        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(\(textContainerInset.left + textContainer.lineFragmentPadding))-[placeholder]",
+        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(\(placeholderLeftMargin))-[placeholder]-(\(placeholderRightMargin))-|",
             options: [],
             metrics: nil,
             views: ["placeholder": placeholderLabel])
-        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]",
+        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]-(\(textContainerInset.bottom))-|",
             options: [],
             metrics: nil,
             views: ["placeholder": placeholderLabel])
@@ -136,6 +144,10 @@ public class KMPlaceholderTextView: UITextView {
     
     @objc private func textDidChange() {
         placeholderLabel.hidden = !text.isEmpty
+    }
+    
+    private func calculatePlaceHolderMargin(margin: CGFloat) -> CGFloat {
+        return margin + textContainer.lineFragmentPadding
     }
     
     public override func layoutSubviews() {
