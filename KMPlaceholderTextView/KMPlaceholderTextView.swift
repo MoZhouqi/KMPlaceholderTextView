@@ -72,7 +72,7 @@ public class KMPlaceholderTextView: UITextView {
         }
     }
     
-    override public var attributedText: NSAttributedString! {
+    override public var attributedText: AttributedString! {
         didSet {
             textDidChange()
         }
@@ -95,9 +95,9 @@ public class KMPlaceholderTextView: UITextView {
     }
     
     private func commonInit() {
-        NSNotificationCenter.defaultCenter().addObserver(self,
+        NotificationCenter.default.addObserver(self,
             selector: #selector(textDidChange),
-            name: UITextViewTextDidChangeNotification,
+            name: NSNotification.Name.UITextViewTextDidChange,
             object: nil)
         
         placeholderLabel.font = font
@@ -105,27 +105,27 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabel.textAlignment = textAlignment
         placeholderLabel.text = placeholder
         placeholderLabel.numberOfLines = 0
-        placeholderLabel.backgroundColor = UIColor.clearColor()
+        placeholderLabel.backgroundColor = UIColor.clear()
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(placeholderLabel)
         updateConstraintsForPlaceholderLabel()
     }
     
     private func updateConstraintsForPlaceholderLabel() {
-        var newConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|-(\(textContainerInset.left + textContainer.lineFragmentPadding))-[placeholder]",
+        var newConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|-(\(textContainerInset.left + textContainer.lineFragmentPadding))-[placeholder]",
             options: [],
             metrics: nil,
             views: ["placeholder": placeholderLabel])
-        newConstraints += NSLayoutConstraint.constraintsWithVisualFormat("V:|-(\(textContainerInset.top))-[placeholder]",
+        newConstraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-(\(textContainerInset.top))-[placeholder]",
             options: [],
             metrics: nil,
             views: ["placeholder": placeholderLabel])
         newConstraints.append(NSLayoutConstraint(
             item: placeholderLabel,
-            attribute: .Width,
-            relatedBy: .Equal,
+            attribute: .width,
+            relatedBy: .equal,
             toItem: self,
-            attribute: .Width,
+            attribute: .width,
             multiplier: 1.0,
             constant: -(textContainerInset.left + textContainerInset.right + textContainer.lineFragmentPadding * 2.0)
             ))
@@ -135,7 +135,7 @@ public class KMPlaceholderTextView: UITextView {
     }
     
     @objc private func textDidChange() {
-        placeholderLabel.hidden = !text.isEmpty
+        placeholderLabel.isHidden = !text.isEmpty
     }
     
     public override func layoutSubviews() {
@@ -144,8 +144,8 @@ public class KMPlaceholderTextView: UITextView {
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self,
-            name: UITextViewTextDidChangeNotification,
+        NotificationCenter.default.removeObserver(self,
+            name: NSNotification.Name.UITextViewTextDidChange,
             object: nil)
     }
     
