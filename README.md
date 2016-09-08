@@ -34,15 +34,13 @@ You can install the latest release version of CocoaPods with the following comma
 $ gem install cocoapods
 ```
 
-*CocoaPods v0.36 or later required*
-
 Simply add the following line to your Podfile:
 
 ```ruby
 platform :ios, '8.0' 
 use_frameworks!
 
-pod 'KMPlaceholderTextView', '~> 1.2.2' 
+pod 'KMPlaceholderTextView', '~> 1.3.0' 
 ```
 
 Then, run the following command:
@@ -65,13 +63,13 @@ $ brew install carthage
 To integrate KMPlaceholderTextView into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "MoZhouqi/KMPlaceholderTextView" >= 1.2
+github "MoZhouqi/KMPlaceholderTextView" >= 1.3
 ```
 
 ## Requirements
 
 - iOS 7.0+
-- Xcode 7.3+
+- Xcode 8.0+
 
 ## License
 
