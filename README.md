@@ -1,6 +1,8 @@
 KMPlaceholderTextView
 ============
 
+**:warning: If you are looking for Swift 2.3 compatible version, please take a look at KMPlaceholderTextView 1.2.2 version. :warning:**
+
 A UITextView subclass that adds support for multiline placeholder written in Swift.
 
 ![PlaceholderTextView](https://raw.githubusercontent.com/MoZhouqi/KMPlaceholderTextView/master/Screenshots/preview.gif)
@@ -70,6 +72,7 @@ github "MoZhouqi/KMPlaceholderTextView" >= 1.3
 
 - iOS 7.0+
 - Xcode 8.0+
+- Swift 3.0+
 
 ## License
 
