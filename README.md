@@ -53,6 +53,11 @@ Then, run the following command:
 $ pod install
 ```
 
+If you are encountering the following warning when using Xcode 8, please make sure to set the Module in the identity inspector of your `KMPlaceholderTextView` in the interface builder to `KMPlaceholderTextView` as well:
+
+
+> warning: IB Designables: Using class UITextView for object with custom class because the class KMPlaceholderTextView does not exist
+
 ### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that automates the process of adding frameworks to your Cocoa application.
