@@ -15,6 +15,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        let attributes = [
+            NSFontAttributeName : UIFont.boldSystemFont(ofSize: 14),
+            NSForegroundColorAttributeName : UIColor.black,
+            NSBackgroundColorAttributeName: UIColor.groupTableViewBackground,
+            NSStrokeWidthAttributeName : 3.0,
+            ] as [String : Any]
+        
+        let placeholder = NSAttributedString(string: "NSAttributedString NSAttributedString NSAttributedString NSAttributedString \nNSAttributedString NSAttributedString NSAttributedString NSAttributedString \nNSAttributedString NSAttributedString NSAttributedString NSAttributedString \n", attributes: attributes)
+        placeholderTextView.attributedPlaceholder = placeholder
     }
     
     override func viewWillAppear(_ animated: Bool) {
