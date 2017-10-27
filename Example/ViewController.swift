@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    func keyboardWasShown(notification: NSNotification)
+    @objc func keyboardWasShown(notification: NSNotification)
     {
         let info = notification.userInfo!
         var kbRect = (info[UIKeyboardFrameEndUserInfoKey]! as! NSValue).cgRectValue
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         placeholderTextView.scrollIndicatorInsets = contentInsets
     }
     
-    func keyboardWillBeHidden(notification: NSNotification)
+    @objc func keyboardWillBeHidden(notification: NSNotification)
     {
         var contentInsets = placeholderTextView.contentInset
         contentInsets.bottom = 0.0
