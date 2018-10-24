@@ -99,7 +99,7 @@ open class KMPlaceholderTextView: UITextView {
         #if swift(>=4.2)
         let notificationName = UITextView.textDidChangeNotification
         #else
-        let notificationName = NSNotification.Name.UITextViewTextDidChange
+        let notificationName = NSNotification.Name.UITextView.textDidChangeNotification
         #endif
       
         NotificationCenter.default.addObserver(self,
@@ -154,7 +154,7 @@ open class KMPlaceholderTextView: UITextView {
       #if swift(>=4.2)
       let notificationName = UITextView.textDidChangeNotification
       #else
-      let notificationName = NSNotification.Name.UITextViewTextDidChange
+      let notificationName = NSNotification.Name.UITextView.textDidChangeNotification
       #endif
       
         NotificationCenter.default.removeObserver(self,
