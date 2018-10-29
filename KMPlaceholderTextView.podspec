@@ -17,7 +17,9 @@ Pod::Spec.new do |s|
   s.author             = { "Zhouqi Mo" => "mozhouqi@gmail.com" }
   s.social_media_url   = "https://twitter.com/MoZhouqi"
 
-  s.platform     = :ios, "8.0"
+  s.swift_version = "4.2"
+
+  s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "https://github.com/MoZhouqi/KMPlaceholderTextView.git", :tag => s.version }
 
