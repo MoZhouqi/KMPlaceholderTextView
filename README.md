@@ -41,7 +41,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-  pod 'KMPlaceholderTextView', '~> 1.3.0'
+  pod 'KMPlaceholderTextView', '~> 1.4.0'
 end
 ```
 
