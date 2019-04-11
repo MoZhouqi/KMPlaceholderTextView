@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KMPlaceholderTextView"
-  s.version      = "1.4.0"
+  s.version      = "1.5.0"
   s.summary      = "A UITextView subclass that adds support for multiline placeholder written in Swift."
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author             = { "Zhouqi Mo" => "mozhouqi@gmail.com" }
   s.social_media_url   = "https://twitter.com/MoZhouqi"
 
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
 
   s.ios.deployment_target = "8.0"
 
