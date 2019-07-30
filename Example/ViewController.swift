@@ -19,20 +19,20 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    func keyboardWasShown(notification: NSNotification)
+    @objc func keyboardWasShown(notification: NSNotification)
     {
         let info = notification.userInfo!
-        var kbRect = (info[UIKeyboardFrameEndUserInfoKey]! as! NSValue).cgRectValue
+        var kbRect = (info[UIResponder.keyboardFrameEndUserInfoKey]! as! NSValue).cgRectValue
         kbRect = view.convert(kbRect, from: nil)
         
         var contentInsets = placeholderTextView.contentInset
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         placeholderTextView.scrollIndicatorInsets = contentInsets
     }
     
-    func keyboardWillBeHidden(notification: NSNotification)
+    @objc func keyboardWillBeHidden(notification: NSNotification)
     {
         var contentInsets = placeholderTextView.contentInset
         contentInsets.bottom = 0.0

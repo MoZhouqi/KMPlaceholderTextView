@@ -128,6 +128,15 @@ open class KMPlaceholderTextView: UITextView {
             metrics: nil,
             views: ["placeholder": placeholderLabel])
         newConstraints.append(NSLayoutConstraint(
+            item: self,
+            attribute: .height,
+            relatedBy: .greaterThanOrEqual,
+            toItem: placeholderLabel,
+            attribute: .height,
+            multiplier: 1.0,
+            constant: textContainerInset.top + textContainerInset.bottom
+        ))
+        newConstraints.append(NSLayoutConstraint(
             item: placeholderLabel,
             attribute: .width,
             relatedBy: .equal,
