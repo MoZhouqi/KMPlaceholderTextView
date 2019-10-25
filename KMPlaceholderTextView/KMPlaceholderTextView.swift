@@ -27,7 +27,13 @@ import UIKit
 open class KMPlaceholderTextView: UITextView {
     
     private struct Constants {
-        static let defaultiOSPlaceholderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
+        static let defaultiOSPlaceholderColor: UIColor = {
+            if #available(iOS 13.0, *) {
+                return .systemGray3
+            }
+
+            return UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
+        }()
     }
   
     public let placeholderLabel: UILabel = UILabel()
@@ -127,6 +133,15 @@ open class KMPlaceholderTextView: UITextView {
             options: [],
             metrics: nil,
             views: ["placeholder": placeholderLabel])
+        newConstraints.append(NSLayoutConstraint(
+            item: self,
+            attribute: .height,
+            relatedBy: .greaterThanOrEqual,
+            toItem: placeholderLabel,
+            attribute: .height,
+            multiplier: 1.0,
+            constant: textContainerInset.top + textContainerInset.bottom
+        ))
         newConstraints.append(NSLayoutConstraint(
             item: placeholderLabel,
             attribute: .width,
