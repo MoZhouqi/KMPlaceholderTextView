@@ -40,9 +40,17 @@ open class KMPlaceholderTextView: UITextView {
     
     private var placeholderLabelConstraints = [NSLayoutConstraint]()
     
+    open var attributedPlaceholder: NSAttributedString? {
+        didSet {
+            placeholderLabel.attributedText = attributedPlaceholder
+        }
+    }
+    
     @IBInspectable open var placeholder: String = "" {
         didSet {
-            placeholderLabel.text = placeholder
+            if attributedPlaceholder == nil{
+                placeholderLabel.text = placeholder
+            }
         }
     }
     
@@ -116,7 +124,11 @@ open class KMPlaceholderTextView: UITextView {
         placeholderLabel.font = font
         placeholderLabel.textColor = placeholderColor
         placeholderLabel.textAlignment = textAlignment
-        placeholderLabel.text = placeholder
+        if let attributedPlaceholder = attributedPlaceholder{
+            placeholderLabel.attributedText = attributedPlaceholder
+        }else{
+            placeholderLabel.text = placeholder
+        }
         placeholderLabel.numberOfLines = 0
         placeholderLabel.backgroundColor = UIColor.clear
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
