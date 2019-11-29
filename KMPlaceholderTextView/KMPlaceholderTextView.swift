@@ -35,6 +35,8 @@ open class KMPlaceholderTextView: UITextView {
             return UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
         }()
     }
+    
+    private var lineFragmentPaddingObserver: NSKeyValueObservation?
   
     public let placeholderLabel: UILabel = UILabel()
     
@@ -122,6 +124,10 @@ open class KMPlaceholderTextView: UITextView {
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(placeholderLabel)
         updateConstraintsForPlaceholderLabel()
+        
+        lineFragmentPaddingObserver = observe(\KMPlaceholderTextView.textContainer.lineFragmentPadding) { [weak self] (_, _) in
+            self?.updateConstraintsForPlaceholderLabel()
+        }
     }
     
     private func updateConstraintsForPlaceholderLabel() {
