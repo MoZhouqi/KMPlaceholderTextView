@@ -12,11 +12,13 @@
 		CD2064FB1AA18E6900E1F272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2064F91AA18E6900E1F272 /* Main.storyboard */; };
 		CD2064FD1AA18E6900E1F272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2064FC1AA18E6900E1F272 /* Images.xcassets */; };
 		CD2065001AA18E6900E1F272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2064FE1AA18E6900E1F272 /* LaunchScreen.xib */; };
-		CD2BEB881B809B7B00EC1567 /* KMPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2BEB871B809B7B00EC1567 /* KMPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD2BEB8E1B809B7B00EC1567 /* KMPlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2BEB831B809B7B00EC1567 /* KMPlaceholderTextView.framework */; };
 		CD2BEB9A1B809B7B00EC1567 /* KMPlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2BEB831B809B7B00EC1567 /* KMPlaceholderTextView.framework */; };
 		CD2BEB9B1B809B7B00EC1567 /* KMPlaceholderTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD2BEB831B809B7B00EC1567 /* KMPlaceholderTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDF629171B80A0B500986415 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */; };
+		CF3B60182558922400B1D7F6 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B6004255890C700B1D7F6 /* KMPlaceholderTextView.swift */; };
+		CF3B601D2558923300B1D7F6 /* KMPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3B6009255890D800B1D7F6 /* KMPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF3B60252558926B00B1D7F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD20650A1AA18E6900E1F272 /* Info.plist */; };
+		CF3B60282558926E00B1D7F6 /* KMPlaceholderTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,11 +69,11 @@
 		CD2064FF1AA18E6900E1F272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CD20650A1AA18E6900E1F272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD20650B1AA18E6900E1F272 /* KMPlaceholderTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextViewTests.swift; sourceTree = "<group>"; };
-		CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		CD2BEB831B809B7B00EC1567 /* KMPlaceholderTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KMPlaceholderTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD2BEB861B809B7B00EC1567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD2BEB871B809B7B00EC1567 /* KMPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMPlaceholderTextView.h; sourceTree = "<group>"; };
 		CD2BEB8D1B809B7B00EC1567 /* KMPlaceholderTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMPlaceholderTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3B6004255890C700B1D7F6 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KMPlaceholderTextView.swift; path = Sources/KMPlaceholderTextView/KMPlaceholderTextView.swift; sourceTree = SOURCE_ROOT; };
+		CF3B6008255890D800B1D7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Sources/KMPlaceholderTextView/Info.plist; sourceTree = SOURCE_ROOT; };
+		CF3B6009255890D800B1D7F6 /* KMPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMPlaceholderTextView.h; path = Sources/KMPlaceholderTextView/KMPlaceholderTextView.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,17 +164,18 @@
 		CD2BEB841B809B7B00EC1567 /* KMPlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				CD2065161AA18F0100E1F272 /* KMPlaceholderTextView.swift */,
+				CF3B6004255890C700B1D7F6 /* KMPlaceholderTextView.swift */,
 				CD2BEB851B809B7B00EC1567 /* Supporting Files */,
 			);
-			path = KMPlaceholderTextView;
+			name = KMPlaceholderTextView;
+			path = Sources/KMPlaceholderTextView;
 			sourceTree = "<group>";
 		};
 		CD2BEB851B809B7B00EC1567 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD2BEB871B809B7B00EC1567 /* KMPlaceholderTextView.h */,
-				CD2BEB861B809B7B00EC1567 /* Info.plist */,
+				CF3B6008255890D800B1D7F6 /* Info.plist */,
+				CF3B6009255890D800B1D7F6 /* KMPlaceholderTextView.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,7 +187,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2BEB881B809B7B00EC1567 /* KMPlaceholderTextView.h in Headers */,
+				CF3B601D2558923300B1D7F6 /* KMPlaceholderTextView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3B60252558926B00B1D7F6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF629171B80A0B500986415 /* KMPlaceholderTextView.swift in Sources */,
+				CF3B60182558922400B1D7F6 /* KMPlaceholderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3B60282558926E00B1D7F6 /* KMPlaceholderTextViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +491,7 @@
 		CD2065101AA18E6900E1F272 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -498,6 +504,7 @@
 		CD2065111AA18E6900E1F272 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,7 +529,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = KMPlaceholderTextView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/KMPlaceholderTextView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -549,7 +556,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = KMPlaceholderTextView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/KMPlaceholderTextView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -567,6 +574,7 @@
 		CD2BEBA11B809B7B00EC1567 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -589,6 +597,7 @@
 		CD2BEBA21B809B7B00EC1567 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
