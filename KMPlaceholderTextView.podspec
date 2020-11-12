@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/MoZhouqi/KMPlaceholderTextView.git", :tag => s.version }
 
-  s.source_files  = "KMPlaceholderTextView/*.swift"
+  s.source_files  = "Sources/KMPlaceholderTextView/*.swift"
 
   s.frameworks = "UIKit"
 
